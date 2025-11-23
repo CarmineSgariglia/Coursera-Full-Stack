@@ -1,15 +1,47 @@
-# Modulo 2
+# Module 2 – Block & Inline Elements, Centering Techniques
 
-Introduzione a span e div per comprendere inline e block in html, centrare un elemento e un testo.
+This section introduces **span** and **div** to help understand the difference between **inline** and **block** elements in HTML, as well as how to center elements and text.
 
-- BLOCK
-Gli elementi block in HTML includono tutti quelli che occupano l’intera larghezza e mandano il contenuto successivo a capo: parliamo quindi di <div>, dei paragrafi <p>, dei titoli da <h1> a <h6>, e degli elementi semantici come <header>, <footer>, <section>, <article>, <aside>, <nav>, <main>, <figure> e <figcaption>. Sono block anche <address>, <blockquote>, <pre>, la linea orizzontale <hr>, i moduli <form>, gli elenchi <ul> e <ol> con i loro <li>, tutte le parti della tabella come <table>, <thead>, <tbody>, <tfoot> e <tr>, oltre a <fieldset> e <legend>. Tutti questi elementi creano sempre un nuovo “blocco visivo”.
+## Block Elements
 
-- INLINE
-Gli elementi inline, invece, rimangono nella stessa riga e occupano solo lo spazio necessario. In questa categoria rientrano <span>, i link <a>, le formattazioni come <strong>, <em>, <b>, <i>, <u>, <small>, <sub>, <sup>, <mark>, <cite>, <code>, <kbd>, <samp>, <var>, <abbr>, <time> e <q>. Sono inline anche le immagini <img>, i ritorni a capo <br>, e diversi elementi di form come <label> e alcuni controlli che però si comportano come inline-block, come <input>, <select>, <textarea> e <button>. Anche <svg> è inline per impostazione predefinita.
+Block elements occupy the full available width and automatically push the following content to a new line.  
+Common block elements include:
 
-In sintesi discorsiva: gli elementi block costruiscono la struttura verticale della pagina perché occupano tutta la larghezza e vanno a capo, mentre gli elementi inline si comportano come testo, restano nella stessa riga e vengono usati per porzioni di contenuto più piccole.
+- `<div>`
+- Paragraphs: `<p>`
+- Headings: `<h1>` to `<h6>`
+- Semantic elements: `<header>`, `<footer>`, `<section>`, `<article>`, `<aside>`, `<nav>`, `<main>`, `<figure>`, `<figcaption>`
+- `<address>`, `<blockquote>`, `<pre>`, horizontal rule `<hr>`
+- Forms and lists: `<form>`, `<ul>`, `<ol>`, `<li>`
+- Table elements: `<table>`, `<thead>`, `<tbody>`, `<tfoot>`, `<tr>`
+- Form-related elements: `<fieldset>`, `<legend>`
 
-Per centrare un elemento di blocco, si utilizza margin: auto; con una larghezza definita. Per centrare il testo, si utilizza text-align: center;.
+All block elements always create a new **visual block** in the page layout.
 
-# 14/11/2025
+## Inline Elements
+
+Inline elements stay on the same line and only take up the space required by their content.  
+Examples include:
+
+- `<span>`
+- Links: `<a>`
+- Text formatting elements: `<strong>`, `<em>`, `<b>`, `<i>`, `<u>`, `<small>`, `<sub>`, `<sup>`, `<mark>`, `<cite>`, `<code>`, `<kbd>`, `<samp>`, `<var>`, `<abbr>`, `<time>`, `<q>`
+- Images: `<img>`
+- Line breaks: `<br>`
+- Certain form elements: `<label>`, plus others that behave like **inline-block**, such as `<input>`, `<select>`, `<textarea>`, `<button>`
+- `<svg>` (inline by default)
+
+Inline elements behave like text: they remain on the same line and are used for smaller pieces of content.
+
+##  Summary
+
+- **Block elements** structure the vertical layout of a page because they span the full width and start on a new line.
+- **Inline elements** behave like text, staying on the same line and occupying only the necessary space.
+
+##  Centering Techniques
+
+- To center a **block element**:  
+  ```css
+  margin: auto;
+  width: <defined value>;
+
